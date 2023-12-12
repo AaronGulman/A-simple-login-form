@@ -10,7 +10,6 @@ body{
 .background {
 	width: 430px;
 	height: 460px;
-	border: 1px solid red;
 	position: absolute;
 	transform:translate(-50%,-50%); 
 	left: 50%;
@@ -26,9 +25,9 @@ body{
 }
 
 .shape:last-child{
-	background: linear-gradient(to right,#1845ad , #23a2f6);
-	right: -30px;
-	bottom: -80px;
+	background: linear-gradient(to right,#9cad18 , #da23f6);
+	right: -42px;
+	bottom: -85px; 
 }
 
 .shape:first-child{
@@ -38,13 +37,13 @@ body{
 }
 
 form{
-	height: 520px;
-	width: 400px;
+	height: 450px;
+	width: 390px;
 	background-color: rgba(255,255,255,0.1);
 	position: absolute;
 	transform: translate(-50%,-50%);
-	top: 80%;
-	left: 70%;
+	top: 50%;
+	left: 50%;
 	border-radius: 10px;
 	backdrop-filter: blur(10px);
 	border: 1px solid  rgba(255,255,255,0.1);
@@ -53,6 +52,15 @@ form{
 
 
 }
+
+form *{
+	font-family: "Poppins", sans-serif;
+	color: #ffff;
+	letter-spacing: 0.5px;
+	outline: none;
+	border: none;
+}
+
 
 form h3{
 	font-size: 32px;
@@ -73,32 +81,68 @@ input {
 	display: block;
 	height: 40px;
 	width: 100%;
-	background-color: rgba(255,255,255,0.07);
+	background-color: rgba(255, 255, 255, 0.07);
 	border-radius: 4px;
 	padding: 0 10px;
 	margin-top: 8px;
 	font-size: 14px;
-	font-weight: 300;
-	position: absolute;
-	transform:translate(-50%,-50%); 
-	left: 50%;
-	right: 50%;
 
-}
+     }
 
 ::selection{
 	color: #e5e5e5;
 }
 
 button{
-	margin-top: 50px;
+	margin-top: 20px;
 	width: 100%;
 	background-color: #ffff;
 	color: #080710;
 	font-size: 16px;
 	padding: 15px 0;
 	font-weight: 600;
+	border:none;
 	border-radius: 5px;
 	cursor: pointer;
+
+}
+
+.social {
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	align-items: center;
+
+}
+
+.social div{
+
+	background: rgb(173, 216, 230,0.7);
+	width: 150px;
+	border-radius: 3px;
+	padding: 5px 10px 10px 5px;
+	background-color: rgba(255,255,255,0.1);
+	
+	color: #eaf0fb;
+}
+	
+
+.social .go:hover,
+.social .fb:hover {
+   background-color: rgba(255, 255, 255, 0.47);
+   
+}
+
+.social .fb{
+	
+	margin-right: 3px;
+
+}
+
+.go, .fb {
+	justify-content:center;
+	align-items: center;
+	text-align: center;
 
 }
